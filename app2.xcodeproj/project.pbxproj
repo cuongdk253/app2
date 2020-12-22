@@ -10,6 +10,7 @@
 		A26F989B2591DDA800B2B0A8 /* app2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26F98912591DDA700B2B0A8 /* app2.framework */; };
 		A26F98A02591DDA800B2B0A8 /* app2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26F989F2591DDA800B2B0A8 /* app2Tests.swift */; };
 		A26F98A22591DDA800B2B0A8 /* app2.h in Headers */ = {isa = PBXBuildFile; fileRef = A26F98942591DDA700B2B0A8 /* app2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A26F98AE2591E1B400B2B0A8 /* app2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26F98AD2591E1B400B2B0A8 /* app2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		A26F989A2591DDA800B2B0A8 /* app2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = app2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A26F989F2591DDA800B2B0A8 /* app2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app2Tests.swift; sourceTree = "<group>"; };
 		A26F98A12591DDA800B2B0A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A26F98AD2591E1B400B2B0A8 /* app2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				A26F98942591DDA700B2B0A8 /* app2.h */,
 				A26F98952591DDA700B2B0A8 /* Info.plist */,
+				A26F98AD2591E1B400B2B0A8 /* app2.swift */,
 			);
 			path = app2;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					A26F98902591DDA700B2B0A8 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					A26F98992591DDA800B2B0A8 = {
 						CreatedOnToolsVersion = 12.2;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A26F98AE2591E1B400B2B0A8 /* app2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		A26F98A62591DDA800B2B0A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Sa123.app2;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		A26F98A72591DDA800B2B0A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -387,6 +395,7 @@
 		A26F98A92591DDA800B2B0A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = app2Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +413,7 @@
 		A26F98AA2591DDA800B2B0A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = app2Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
